@@ -1,0 +1,126 @@
+/*plantilla ccs creada por Davide*/
+/*----------------*/
+/* 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*------------------------------------------------------------------------*/
+/*Vamos a definir el tamaño para las unidad relativa rem, y cambiar el font-family por defecto */
+.style-script-regular {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.sevillana-regular {
+  font-family: "sans-serif", cursive;
+  font-weight: 400;
+}
+
+:root {
+  font-size: 16px;
+}
+
+/*--------------------------------------------*/
+
+body {
+  background-color: #646464;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Sevillana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  /*display: relative;*/
+  background-color: #00000000;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+
+  color: #000000;
+  box-shadow: 1rem 1rem 1rem 1rem #00000090;
+}
+
+.card img {
+  /*display: absolute;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+a {
+  font-family: "Sevillana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: bisque;
+  outline: none;
+  text-decoration: none;
+  width: auto;
+  text-align: auto;
+  margin-left: 5vw;
+  margin-right: auto;
+}
+
+a:link {
+  color: bisque;
+  font-size: 24px;
+}
+a:visited {
+  color: bisque;
+  font-size: 1rem;
+  padding: 1rem 10ch;
+}
+
+a:hover {
+  color: bisque;
+  font-size: 22px;
+  text-shadow: -1rem -1rem 1rem #000000;
+}
+
+a:active {
+  color: bisque;
+  font-size: 1rem;
+}
+
+a:focus {
+  color: bisque;
+  font-size: 1rem;
+}
